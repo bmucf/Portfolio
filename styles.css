@@ -300,3 +300,117 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* =============================
+   CONTACT PAGE
+   ============================= */
+
+.contact-section {
+  margin-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.contact-section p {
+  max-width: 600px;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  color: #D3DAD9;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  max-width: 600px;
+  display: grid;
+  gap: 1rem;
+}
+
+.contact-form label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+  letter-spacing: 0.03em;
+  color: #D3DAD9;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #5a5a5a;
+  border-radius: 6px;
+  background: #2f2d35;
+  color: #D3DAD9;
+  font-size: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #D3DAD9;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.contact-submit {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #D3DAD9;
+  border: none;
+  color: #111;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.contact-submit:hover {
+  background: #ffffff;
+}
+
+/* =============================
+   CONTACT: LINKS & SOCIALS
+   ============================= */
+
+.contact-divider {
+  border: none;
+  border-top: 1px solid #5a5a5a;
+  margin: 3rem 0;
+}
+
+.links-section h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #D3DAD9;
+}
+
+.links-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.link-box ul {
+  list-style: none;
+  margin-top: 0.5rem;
+}
+
+.link-box li {
+  margin-bottom: 0.5rem;
+}
+
+.link-box a {
+  color: #D3DAD9;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.link-box a:hover {
+  text-decoration: none;
+}

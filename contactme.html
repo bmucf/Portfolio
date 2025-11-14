@@ -3,26 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brian Mosquera - Programmer</title>
+  <title>Contact Me - Brian Mosquera</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <div class="logo-container">
-        <h1 class="logo">Brian Mosquera</h1>
-        <p class="occupation">Game Programmer</p>
+
+<header class="header">
+  <nav class="nav container">
+    <div class="logo-container">
+      <h1 class="logo">Brian Mosquera</h1>
+      <p class="occupation">Game Programmer</p>
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">HOME</a>
+      <a href="project1.html" target="_blank">BOARD TO DEATH</a>
+      <a href="project2.html" target="_blank">PALLETE SWAP</a>
+      <a href="project3.html" target="_blank">BULL RUSH: DON'T BE LATE</a>
+      <a href="">CONTACT ME</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="contact-section">
+    <h2 class="section-title">CONTACT ME</h2>
+    <div class="divider"></div>
+
+    <p>
+      If you'd like to reach out regarding work, projects, or collaboration,
+      feel free to send me a message using the form below.
+    </p>
+
+    <form class="contact-form">
+      <div>
+        <label for="name">Your Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
       </div>
 
-      <div class="nav-links">
-        <a href="index.html">HOME</a>
-        <a href="project1.html" target="_blank">BOARD TO DEATH</a>
-        <a href="project2.html" target="_blank">PALLETE SWAP</a>
-        <a href="project3.html" target="_blank">BULL RUSH: DON'T BE LATE</a>
-        <a href=""> CONTACT ME</a>
+      <div>
+        <label for="email">Email Address</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
       </div>
-    </nav>
-  </header>
 
-  </body>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+      </div>
+
+      <button type="submit" class="contact-submit">Send Message</button>
+    </form>
+
+    <hr class="contact-divider">
+
+<section class="links-section">
+  <h3 class="section-title">Links & Socials</h3>
+  <div class="divider"></div>
+
+  <div class="links-grid">
+
+    <div class="link-box">
+      <h4>Socials</h4>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/brian-mosquera/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/bmucf" target="_blank">GitHub</a></li>
+        <li><a href="https://brian-mosquera.itch.io/" target="_blank">Itch.io</a></li>
+      </ul>
+    </div>
+
+    <div class="link-box">
+      <h4>Games & Projects</h4>
+      <ul>
+        <li><a href="https://brian-mosquera.itch.io/palette-swap" target="_blank">Palette Swap</a></li>
+        <li><a href="https://brian-mosquera.itch.io/bull-rush-dont-be-late" target="_blank">Bull Rush: Don't Be Late</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+  </section>
+</main>
+
+</body>
 </html>
