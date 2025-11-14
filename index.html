@@ -3,95 +3,147 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Brian Mosquera - Programmer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      text-align: left;
-      padding: 0.25rem 0.25rem;
-      background-color: #222;
-      color: white;
-    }
-
-    .portfolio {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      padding: 2rem;
-      gap: 2rem;
-    }
-
-    .project {
-      width: 300px;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      background: white;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .project:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    }
-
-    .project img {
-      width: 100%;
-      display: block;
-    }
-
-    .project h3 {
-      text-align: center;
-      margin: 0;
-      padding: 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #222;
-      color: white;
-      margin-top: 2rem;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-  </style>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Brian Mosquera</h1>
-    <p>Hello</p>
+  <header class="header">
+    <nav class="nav container">
+      <h1 class="logo">Your Name</h1>
+      <div class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#highlighted">HIGHLIGHTED PROJECTS</a>
+        <a href="#other">OTHER PROJECTS</a>
+      </div>
+    </nav>
   </header>
 
-  <section class="portfolio">
-    <a href="project1.html" class="project">
-      <img src="project1.jpg" alt="Project 1" />
-      <h3>Project One</h3>
-    </a>
+  <main class="container">
+    <section id="about" class="about-grid">
+      <div class="about-main">
+        <h2 class="section-title">WELCOME</h2>
+        <div class="divider"></div>
 
-    <a href="project2.html" class="project">
-      <img src="project2.jpg" alt="Project 2" />
-      <h3>Project Two</h3>
-    </a>
+        <p><strong>Hi, I'm [Your Name], a [Your Role] based in [Your Location].</strong></p>
 
-    <a href="project3.html" class="project">
-      <img src="project3.jpg" alt="Project 3" />
-      <h3>Project Three</h3>
-    </a>
-  </section>
+        <p class="about-text">
+          Write your introduction here. Explain your specialization, work style, or
+          career focus.
+        </p>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
+        <ul class="about-list">
+          <li>• Skill or competency</li>
+          <li>• Skill or competency</li>
+          <li>• Skill or competency</li>
+          <li>• Skill or competency</li>
+        </ul>
+
+        <div class="button-row">
+          <a class="button" href="#">Download my CV</a>
+          <a class="button-link" href="mailto:you@example.com">Email</a>
+        </div>
+
+        <div class="about-subgrid">
+          <div>
+            <h4 class="label">Skills & Tools</h4>
+            <p>List your skills and tools.</p>
+          </div>
+
+          <div>
+            <h4 class="label">Engines / Software</h4>
+            <p>List engines or software you use.</p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="about-side">
+        <div class="profile-box">
+          <img src="images/profile.jpg" alt="Profile" class="profile-img">
+        </div>
+
+        <div class="languages">
+          <h5>Languages</h5>
+          <p>Language 1</p>
+          <p>Language 2</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="highlighted" class="projects-section">
+      <h3 class="section-title">HIGHLIGHTED PROJECTS</h3>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="images/project1.jpg" class="project-img" alt="Project 1">
+          <div class="project-content">
+            <h4>Project Title</h4>
+            <p class="role">Role</p>
+            <p>Description of the project goes here.</p>
+            <div class="tags">
+              <span class="tag">Tag</span>
+              <span class="tag">Tag</span>
+            </div>
+            <a href="#" class="readmore">Marketplace Link</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project2.jpg" class="project-img" alt="Project 2">
+          <div class="project-content">
+            <h4>Project Title</h4>
+            <p class="role">Role</p>
+            <p>Description of the project goes here.</p>
+            <div class="tags">
+              <span class="tag">Tag</span>
+              <span class="tag">Tag</span>
+            </div>
+            <a href="#" class="readmore">Marketplace Link</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/project3.jpg" class="project-img" alt="Project 3">
+          <div class="project-content">
+            <h4>Project Title</h4>
+            <p class="role">Role</p>
+            <p>Description of the project goes here.</p>
+            <div class="tags">
+              <span class="tag">Tag</span>
+              <span class="tag">Tag</span>
+            </div>
+            <a href="#" class="readmore">Marketplace Link</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="other" class="other-section">
+      <h3 class="section-title">OTHER PROJECTS</h3>
+      <div class="other-grid">
+        <div class="other-card">
+          <h5>Project Title</h5>
+          <p class="role">Role</p>
+          <a href="#" class="readmore">Read More</a>
+        </div>
+
+        <div class="other-card">
+          <h5>Project Title</h5>
+          <p class="role">Role</p>
+          <a href="#" class="readmore">Read More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 Your Name. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">LinkedIn</a>
+        <a href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
